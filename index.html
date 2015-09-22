@@ -1,0 +1,291 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Starsoft | Home</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+   		 <!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		 <!---- start-smoth-scrolling---->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<!----webfonts--->
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+		<!---//webfonts--->
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+	</head>
+	<body>
+		<!----- start-header---->
+			<div id="home" class="header">
+					<div class="top-header">
+						<div class="container">
+						<div class="logo">
+							<a href="#"><img src="images/star_logo.png" title="Starsoft" /></a>
+						</div>
+						<!----start-top-nav---->
+						 <nav class="top-nav">
+							<ul class="top-nav">
+								<li class="active"><a href="#home" class="scroll">About</a><span> </span></li>
+								<li><a href="#work" class="scroll">Work</a></li>
+								<li><a href="#contact" class="scroll">Contact</a></li>
+							</ul>
+							<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+						</nav>
+						<div class="clearfix"> </div>
+						<!----top-header-info--->
+						<div class="top-header-info">
+							<p>
+								Hy,<br/>
+								I'm Ashish. <br/>
+								A freelance Web Designer/Android Developer.<br/>
+
+							</p>
+							<a class="contactme" href="#contact">CONTACT ME</a>
+						</div>
+						<!----//End-header-info--->
+					</div>
+				</div>
+			</div>
+			<!----- //End-header---->
+			<!---- about us ---->
+			<div class="aboutus">
+				<div class="container">
+					<h2>ABOUT<br/>ME</h2>
+					<span> </span>
+					<div class="col-md-6 aboutus-left">
+						<p>Hey, I'm Ashish Katlam. A Computer graduate from SGSITS Indore (M.P). </p>
+						<p>I'm passionate about coding and designing.<br/>
+                                                   My USP:<br/>
+                                                   <ul>
+                                                     <li>Work in pace.</li>
+                                                     <li>Product delivery on time.</li>
+                                                     <li>Unique Designing.</li>
+                                                   </ul>
+                                                 </p>
+					</div>
+				
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!---- about us ---->
+
+
+			<!---- WORKS ---->
+			<div id="work" class="works">
+				<div class="container">
+					<h2>MY<br/>WORKS</h2>
+					<span> </span>
+				</div>
+				<!---- partners ---->
+				<div class="partners">
+                                      
+					<!----sreen-gallery-cursual---->
+						<div class="sreen-gallery-cursual">
+							 <!-- requried-jsfiles-for owl -->
+							<link href="css/owl.carousel.css" rel="stylesheet">
+							    <script src="js/owl.carousel.js"></script>
+							        <script>
+							    $(document).ready(function() {
+							      $("#owl-demo").owlCarousel({
+							        items : 5,
+							        lazyLoad : true,
+							        autoPlay : true,
+							        navigation : true,
+							        navigationText :  false,
+							        pagination : false,
+							      });
+							    });
+							    </script>
+							 <!-- //requried-jsfiles-for owl -->
+							 <!-- start content_slider -->
+							 <div class="container">
+                                                          <h3>Website Development</h3>
+						       <div id="owl-demo" class="owl-carousel">
+					                <div class="item">
+                                                                <a href="http://visionumgroup.com/chikooplay/" target="_blank" style="cursor:hand;">
+					                	<img class="lazyOwl" data-src="images/screen1.png" alt="screen-name">
+					                	<label>Chikooplay</label>
+                                                                </a>
+					                </div>
+					                <div class="item">
+                                                                <a href="http://www.chikoopay.com/" target="_blank" style="cursor:hand;">
+					                	<img class="lazyOwl" data-src="images/screen2.png" alt="screen-name">
+					                	<label>Chikoopay</label>
+                                                                </a>
+					                </div>
+					                <div class="item">
+                                                                <a href="http://visionumgroup.com/sigma/" target="_blank" style="cursor:hand;">
+					                	<img class="lazyOwl" data-src="images/screen3.png" alt="screen-name">
+					                	<label>Sigma</label>
+                                                                </a>
+					                </div>
+					                <div class="item">
+                                                                <a href="http://www.dojugaad.in" target="_blank" style="cursor:hand;">
+					                	<img class="lazyOwl" data-src="images/screen4.png" alt="screen-name">
+					                	<label>DoJugaad</label>
+                                                                </a>
+					                </div>
+					            
+				              </div>
+							</div>
+						<!--//sreen-gallery-cursual---->
+				</div>
+				<!---- //partners ---->
+				<!----project-grid---->
+				<div class="project-grid">
+					<div class="container">
+                                       <h3>Android Development</h3>
+					<img class="project-screen" src="images/a1.png" title="name" />
+					<div class="project-grid-info">
+						<div class="col-md-3 project-grid-info-left">
+							<a class="sitedemo" href="https://drive.google.com/file/d/0B5AL1RpDxQv1OFpVUklBRHktc0k/view?usp=sharing">Download</a>
+						</div>
+						<div class="col-md-9 project-grid-info-left">
+							<h3><a href="">Flights</a></h3>		
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+                                        <br/>
+	                                <img class="project-screen" src="images/a2.png" title="name" />
+					<div class="project-grid-info">
+						<div class="col-md-3 project-grid-info-left">
+							<a class="sitedemo" href="https://drive.google.com/file/d/0B5AL1RpDxQv1LUxQRVZFUGpLYmc/view?usp=sharing">Download</a>
+						</div>
+						<div class="col-md-9 project-grid-info-left">
+							<h3><a href="">Lollipop Showcase</a></h3>		
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+                                        <br/>
+	                                <img class="project-screen" src="images/a3.png" title="name" />
+					<div class="project-grid-info">
+						<div class="col-md-3 project-grid-info-left">
+							<a class="sitedemo" href="https://drive.google.com/file/d/0B5AL1RpDxQv1dWtWYmJCcnNsMXc/view?usp=sharing">Download</a>
+						</div>
+						<div class="col-md-9 project-grid-info-left">
+							<h3><a href="">Login/Signup</a></h3>		
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+                                        <br/>
+	                                <img class="project-screen" src="images/a4.png" title="name" />
+					<div class="project-grid-info">
+						<div class="col-md-3 project-grid-info-left">
+							<a class="sitedemo" href="https://drive.google.com/file/d/0B5AL1RpDxQv1UGhrNV9jNEI1MjA/view?usp=sharing">Download</a>
+						</div>
+						<div class="col-md-9 project-grid-info-left">
+							<h3><a href="#">Reminder</a></h3>		
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+                                        <br/>
+	                                <img class="project-screen" src="images/a5.png" title="name" />
+					<div class="project-grid-info">
+						<div class="col-md-3 project-grid-info-left">
+							<a class="sitedemo" href="https://drive.google.com/file/d/0B5AL1RpDxQv1TGZZUlUtajRRcHc/view?usp=sharing">Download</a>
+						</div>
+						<div class="col-md-9 project-grid-info-left">
+							<h3><a href="#">Instagram Material</a></h3>		
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					</div>
+
+				</div>
+				<!----project-grid---->
+			</div>
+			</div>
+			<!---- //WORKS ---->
+
+			<!---- CONTACT ----->
+			<div id="contact" class="contact"> 
+				<div class="container">
+					<h2>WAYS TO<br/>CONTACT ME</h2>
+					<span> </span>
+				<!----contact-grids---->
+				<div class="contact-grids">
+					<div class="col-md-6 contact-left">
+						<p>Drop me a message</p>
+						<form>
+							<input type="text" value="Your name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your name';}">
+							<input type="text" value="Your email address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your email address';}">
+							<textarea rows="2" cols="70" onfocus="if(this.value == 'Your message') this.value='';" onblur="if(this.value == '') this.value='Your message';">Your message</textarea>
+							<input type="submit" value="SEND MESSAGE" />
+							<div class="clearfix"> </div>
+						</form>
+
+					</div>
+					<div class="col-md-6 contact-right">
+						<div class="social-share">
+							<h4>ON SOCIAL</h4>
+							<ul class="unstyled-list list-inline">
+								<li><a class="facebook" href="https://www.facebook.com/ashish.katlam" target="_blank"><span> </span></a></li>
+								<li><a class="googlepluse" href="https://plus.google.com/103768334892971983614/about/p/pub" target="_blank"><span> </span></a></li>
+								<li><a class="linkedin" href="https://www.linkedin.com/pub/aashish-katlam/80/a58/450" target="_blank"><span> </span></a></li>
+								<div class="clearfix"> </div>
+							</ul>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			</div>
+			<!---- CONTACT ----->
+			
+			<div class="copy-right text-center">
+				<div class="container">
+
+								<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+									<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	
+				</div>
+			</div>
+	</body>
+</html>
+
