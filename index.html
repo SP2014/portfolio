@@ -1,297 +1,291 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-   <script>
-     document.write('<link rel="stylesheet" href="css/mui.min.css" type="text/css">');
-     document.write('<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">');
-     //document.write('<link rel="stylesheet" href="css/design.css" type="text/css">');   
-    </script>
-    <title>8 Hoardings</title>
-    
-<style>
-/**
- * Body CSS
- */
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Starsoft | Home</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+   		 <!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		 <!---- start-smoth-scrolling---->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<!----webfonts--->
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+		<!---//webfonts--->
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+	</head>
+	<body>
+		<!----- start-header---->
+			<div id="home" class="header">
+					<div class="top-header">
+						<div class="container">
+						<div class="logo">
+							<a href="#"><img src="images/star_logo.png" title="Starsoft" /></a>
+						</div>
+						<!----start-top-nav---->
+						 <nav class="top-nav">
+							<ul class="top-nav">
+								<li class="active"><a href="#home" class="scroll">About</a><span> </span></li>
+								<li><a href="#work" class="scroll">Work</a></li>
+								<li><a href="#contact" class="scroll">Contact</a></li>
+							</ul>
+							<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+						</nav>
+						<div class="clearfix"> </div>
+						<!----top-header-info--->
+						<div class="top-header-info">
+							<p>
+								Hy,<br/>
+								I'm Ashish. <br/>
+								A freelance Web Designer/Android Developer.<br/>
 
-html,
-body {
-  height: 100%;      
-}
-
-html,
-body,
-input,
-textarea,
-buttons {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-}
-
-    body{
-     margin: 0;
-     padding: 0;    
-    }    
-    
-/**
- * Header CSS
- */
-
-header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 2;
-}
-
-    .mui-appbar{
-     background-color: #FEFEFE  !important;
-    }    
-    
-header ul.mui-list--inline {
-  margin-bottom: 0;
-}
-
-header a {
-  color: white;
-}
-
-header a:hover {
-  color: white;
-}
+							</p>
+							<a class="contactme" href="#contact">CONTACT ME</a>
+						</div>
+						<!----//End-header-info--->
+					</div>
+				</div>
+			</div>
+			<!----- //End-header---->
+			<!---- about us ---->
+			<div class="aboutus">
+				<div class="container">
+					<h2>ABOUT<br/>ME</h2>
+					<span> </span>
+					<div class="col-md-6 aboutus-left">
+						<p>Hey, I'm Ashish Katlam. A Computer graduate from SGSITS Indore (M.P). </p>
+						<p>I'm passionate about coding and designing.<br/>
+                                                   My USP:<br/>
+                                                   <ul>
+                                                     <li>Work in pace.</li>
+                                                     <li>Product delivery on time.</li>
+                                                     <li>Unique Designing.</li>
+                                                   </ul>
+                                                 </p>
+					</div>
+				
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!---- about us ---->
 
 
-/**
- * Content CSS
- */
+			<!---- WORKS ---->
+			<div id="work" class="works">
+				<div class="container">
+					<h2>MY<br/>WORKS</h2>
+					<span> </span>
+				</div>
+				<!---- partners ---->
+				<div class="partners">
+                                      
+					<!----sreen-gallery-cursual---->
+						<div class="sreen-gallery-cursual">
+							 <!-- requried-jsfiles-for owl -->
+							<link href="css/owl.carousel.css" rel="stylesheet">
+							    <script src="js/owl.carousel.js"></script>
+							        <script>
+							    $(document).ready(function() {
+							      $("#owl-demo").owlCarousel({
+							        items : 5,
+							        lazyLoad : true,
+							        autoPlay : true,
+							        navigation : true,
+							        navigationText :  false,
+							        pagination : false,
+							      });
+							    });
+							    </script>
+							 <!-- //requried-jsfiles-for owl -->
+							 <!-- start content_slider -->
+							 <div class="container">
+                                                          <h3>Website Development</h3>
+						       <div id="owl-demo" class="owl-carousel">
+					                <div class="item">
+                                                                <a href="http://visionumgroup.com/chikooplay/" target="_blank" style="cursor:hand;">
+					                	<img class="lazyOwl" data-src="images/screen1.png" alt="screen-name">
+					                	<label>Chikooplay</label>
+                                                                </a>
+					                </div>
+					                <div class="item">
+                                                                <a href="http://www.chikoopay.com/" target="_blank" style="cursor:hand;">
+					                	<img class="lazyOwl" data-src="images/screen2.png" alt="screen-name">
+					                	<label>Chikoopay</label>
+                                                                </a>
+					                </div>
+					                <div class="item">
+                                                                <a href="http://visionumgroup.com/sigma/" target="_blank" style="cursor:hand;">
+					                	<img class="lazyOwl" data-src="images/screen3.png" alt="screen-name">
+					                	<label>Sigma</label>
+                                                                </a>
+					                </div>
+					                <div class="item">
+                                                                <a href="http://www.dojugaad.in" target="_blank" style="cursor:hand;">
+					                	<img class="lazyOwl" data-src="images/screen4.png" alt="screen-name">
+					                	<label>DoJugaad</label>
+                                                                </a>
+					                </div>
+					            
+				              </div>
+							</div>
+						<!--//sreen-gallery-cursual---->
+				</div>
+				<!---- //partners ---->
+				<!----project-grid---->
+				<div class="project-grid">
+					<div class="container">
+                                       <h3>Android Development</h3>
+					<img class="project-screen" src="images/a1.png" title="name" />
+					<div class="project-grid-info">
+						<div class="col-md-3 project-grid-info-left">
+							<a class="sitedemo" href="https://drive.google.com/file/d/0B5AL1RpDxQv1OFpVUklBRHktc0k/view?usp=sharing">Download</a>
+						</div>
+						<div class="col-md-9 project-grid-info-left">
+							<h3><a href="">Flights</a></h3>		
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+                                        <br/>
+	                                <img class="project-screen" src="images/a2.png" title="name" />
+					<div class="project-grid-info">
+						<div class="col-md-3 project-grid-info-left">
+							<a class="sitedemo" href="https://drive.google.com/file/d/0B5AL1RpDxQv1LUxQRVZFUGpLYmc/view?usp=sharing">Download</a>
+						</div>
+						<div class="col-md-9 project-grid-info-left">
+							<h3><a href="">Lollipop Showcase</a></h3>		
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+                                        <br/>
+	                                <img class="project-screen" src="images/a3.png" title="name" />
+					<div class="project-grid-info">
+						<div class="col-md-3 project-grid-info-left">
+							<a class="sitedemo" href="https://drive.google.com/file/d/0B5AL1RpDxQv1dWtWYmJCcnNsMXc/view?usp=sharing">Download</a>
+						</div>
+						<div class="col-md-9 project-grid-info-left">
+							<h3><a href="">Login/Signup</a></h3>		
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+                                        <br/>
+	                                <img class="project-screen" src="images/a4.png" title="name" />
+					<div class="project-grid-info">
+						<div class="col-md-3 project-grid-info-left">
+							<a class="sitedemo" href="https://drive.google.com/file/d/0B5AL1RpDxQv1UGhrNV9jNEI1MjA/view?usp=sharing">Download</a>
+						</div>
+						<div class="col-md-9 project-grid-info-left">
+							<h3><a href="#">Reminder</a></h3>		
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+                                        <br/>
+	                                <img class="project-screen" src="images/a5.png" title="name" />
+					<div class="project-grid-info">
+						<div class="col-md-3 project-grid-info-left">
+							<a class="sitedemo" href="https://drive.google.com/file/d/0B5AL1RpDxQv1TGZZUlUtajRRcHc/view?usp=sharing">Download</a>
+						</div>
+						<div class="col-md-9 project-grid-info-left">
+							<h3><a href="#">Instagram Material</a></h3>		
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					</div>
 
-#content-wrapper {
-  min-height: 100%;
+				</div>
+				<!----project-grid---->
+			</div>
+			</div>
+			<!---- //WORKS ---->
 
-  /* sticky footer */
-  margin-bottom: -50px;
-  padding-bottom: 100px;
-}
+			<!---- CONTACT ----->
+			<div id="contact" class="contact"> 
+				<div class="container">
+					<h2>WAYS TO<br/>CONTACT ME</h2>
+					<span> </span>
+				<!----contact-grids---->
+				<div class="contact-grids">
+					<div class="col-md-6 contact-left">
+						<p>Drop me a message</p>
+						<form>
+							<input type="text" value="Your name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your name';}">
+							<input type="text" value="Your email address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your email address';}">
+							<textarea rows="2" cols="70" onfocus="if(this.value == 'Your message') this.value='';" onblur="if(this.value == '') this.value='Your message';">Your message</textarea>
+							<input type="submit" value="SEND MESSAGE" />
+							<div class="clearfix"> </div>
+						</form>
 
-    
+					</div>
+					<div class="col-md-6 contact-right">
+						<div class="social-share">
+							<h4>ON SOCIAL</h4>
+							<ul class="unstyled-list list-inline">
+								<li><a class="facebook" href="https://www.facebook.com/ashish.katlam" target="_blank"><span> </span></a></li>
+								<li><a class="googlepluse" href="https://plus.google.com/103768334892971983614/about/p/pub" target="_blank"><span> </span></a></li>
+								<li><a class="linkedin" href="https://www.linkedin.com/pub/aashish-katlam/80/a58/450" target="_blank"><span> </span></a></li>
+								<div class="clearfix"> </div>
+							</ul>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			</div>
+			<!---- CONTACT ----->
+			
+			<div class="copy-right text-center">
+				<div class="container">
 
-.banner{
- background: url('img/bb2.png') no-repeat 50% 50% fixed; 
-  background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
- height: 500px;    
-}
-    
-    .another_banner{
-     background: url('img/back.png') no-repeat 50% 50%; 
-  background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
- height: 550px;
-    }    
-
-    .service{
-     background:#00a0e3;
-     padding-left: 20px;
-     padding-right: 20px;
-     padding-top: 20px;
-     padding-bottom: 20px;    
-    }    
-    
-    .f_box{
-    background:#00a8e3;    
-    margin-top:auto;
-    margin-bottom:auto;
-    display:block;
-    padding:30px;    
-    }    
-    
-/**
- * Footer CSS
- */
-
-footer {
-  height: 50px;
-  background-color: #eee;
-  border-top: 1px solid #e0e0e0;
-  padding-top: 35px;
-}
-    
-    #toTop button{
-     position: fixed;
-     right: 20px;
-     bottom: 20px;
-     display: none;
-    }    
-</style>    
-</head>
-
-<body>
-
-<!-- Header -->
-<header class="mui-appbar mui--z1">
-      <div class="mui-container">
-        <table width="100%">
-          <tr class="mui--appbar-height">
-            <td class="mui--text-title mui--hidden-md mui--hidden-lg">8Hoardings</td>
-            <td class="mui--hidden-xs mui--hidden-sm"><a href="/"><img src="img/logo.png"/></a></td>  
-            <td align="right">
-              <ul class="mui-list--inline mui--text-body2">
-                <li><a href="#">About</a></li>
-                <li><a href="#service">Services</a></li>  
-                <li><a href="#feature">Features</a></li>  
-                <li><a href="#advertise">Advertise</a></li>  
-                <li><a href="#advantage">Advantages</a></li>
-                <li class="mui--hidden-xs mui--hidden-sm"><button class="mui-btn mui-btn--raised mui-btn--danger">Login</button></li>
-              </ul>
-            </td>
-          </tr>
-        </table>
-      </div>
-</header><!-- Header End -->
-    
-<!-- Main Content -->
-<div id="content-wrapper">
-<div class="mui--appbar-height"></div>
-<div class="banner"></div>
-
-<!-- Service Section -->    
-<div id="service">
-    <div class="mui-row service">
-        
-      <div class="mui-col-md-3">
-        <div class="mui-panel f_box">
-            <div class="mui--text-center">
-                <a href="#"><img src="img/f1.png" alt="Feature"/></a>+
-                <div class="mui--text-white mui--text-title" style="margin-top:10px;">HOARDING ADVERTISING</div>
-            </div>
-        </div>  
-      </div>
-        
-      <div class="mui-col-md-3">
-        <div class="mui-panel f_box">
-            <div class="mui--text-center">
-                <a href="#"><img src="img/f2.png" alt="Feature"/></a>
-                <div class="mui--text-white mui--text-title" style="margin-top:10px;">OUTDOOR INFRA ADVERTISING</div>                
-            </div>
-        </div>  
-      </div>
-        
-      <div class="mui-col-md-3">
-        <div class="mui-panel f_box">
-            <div class="mui--text-center">
-                <a href="#"><img src="img/f3.png" alt="Feature"/></a>
-                <div class="mui--text-white mui--text-title" style="margin-top:10px;">DIGITAL ADVERTISING&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>                
-            </div>
-        </div>  
-      </div>
-        
-      <div class="mui-col-md-3">
-        <div class="mui-panel f_box">
-            <div class="mui--text-center">
-                <a href="#"><img src="img/f4.png" alt="Feature"/></a>
-                <div class="mui--text-white mui--text-title" style="margin-top:10px;">MEGASCREEN ADVERTISING</div>                
-            </div>
-        </div>  
-      </div>        
-    </div>     
-</div><!-- End of Service Section -->
-    
-<!-- Video Section -->
-<div id="vid_container">
-    
-</div><!-- End of Video Section -->    
-    
-<!-- Another Banner -->
-<div class="another_banner"></div>
-    
-<!-- Features Section -->
-<div id="feature">
-  <div class="mui-row"  style="padding-left:20px; padding-right:20px;">
-    <div class="mui--text-center">
-     <img src="img/txt.png" class="mui--hidden-xs mui---hidden-sm" style="width:100%; padding-left:100px; padding-right:100px; padding-top:50px; padding-bottom:20px;">
-    </div>
-      
-    <div class="mui-col-md-3">
-       <div class="mui-panel" style="box-shadow:none;">
-           <div class="mui--text-center">
-             <img src="img/s1.png" alt="F" />
-                <div class="mui--text-black mui--text-title" style="margin-top:10px;">A number that indicates the overall outcomes of advertising at the selected property.</div>            
-           </div>
-       </div>    
-    </div>  
-    
-    <div class="mui-col-md-3">
-       <div class="mui-panel" style="box-shadow:none;">
-           <div class="mui--text-center">
-             <img src="img/s2.png" alt="F" />
-                <div class="mui--text-black mui--text-title" style="margin-top:10px;">View cities and localities on demand.</div>            
-           </div>
-       </div>    
-    </div>
-      
-    <div class="mui-col-md-3">
-       <div class="mui-panel" style="box-shadow:none;">
-           <div class="mui--text-center">
-             <img src="img/s3.png" alt="F" />
-                <div class="mui--text-black mui--text-title" style="margin-top:10px;">A simple formula that shows you the most popular listings.</div>            
-           </div>
-       </div>    
-    </div>
-      
-    <div class="mui-col-md-3">
-       <div class="mui-panel" style="box-shadow:none;">
-           <div class="mui--text-center">
-             <img src="img/s4.png" alt="F" />
-                <div class="mui--text-black mui--text-title" style="margin-top:10px;">See where advertisers prefer to advertise. View places that are on demand.</div>            
-           </div>
-       </div>    
-    </div>
-      
-  </div>    
-</div>    
-    
-</div><!-- Main Content End -->
-    
-<!-- Footer -->    
-<footer>
-      <!--div class="mui-container mui--text-center mui--text-bottom">
-        Made with ♥ by <a href="https://www.muicss.com">MUICSS</a>
-      </div-->
-</footer>    
-    
-<div id="toTop">
- <button class="mui-btn mui-btn--fab mui-btn--primary toTop"><i class="fa fa-chevron-up"></i></button>  
-</div>    
-
-<script src="js/jquery.min.js" type="text/javascript"></script>    
-<script src="js/mui.min.js" type="text/javascript"></script>
-<script src="js/jquery.smoothscroll.min.js"></script>
-<script type="text/javascript">
- $(function() {
-    $('html').smoothScroll(500);
-    $(window).scroll(function(){
-		if ($(this).scrollTop() > 600) {
-			$('.toTop').fadeIn();
-		} else {
-			$('.toTop').fadeOut();
-		}
-	});
+								<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+									<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 	
-	//Click event to scroll to top
-	$('.toTop').click(function(){
-		$('html, body').animate({scrollTop : 0},500);
-		return false;
-	}); 
-   });    
-</script>    
-    
-</body>    
-    
+				</div>
+			</div>
+	</body>
 </html>
+
